@@ -19,3 +19,7 @@ mul.o: mul.c
 clean:
 	rm -f *.o calculator.out
 
+
+# 	-o create objective file
+
+

@@ -1,0 +1,51 @@
+/*
+use static it show the updated last value
+when try to insert the multiple values time that time only show the last value
+
+use the dunamic memory allocation
+malloc will allocate for the struct
+                  
+                    ___ Empty
+                   |  
+2 possible case    | 
+                   |____non empty
+
+status   success,failure
+
+
+1. create the name (allocate,validate,update)
+
+allocate 
+    struct *new = malloc(sizeof(struct));
+validate
+    if(new == NULL){
+        return fail
+    }
+
+update 
+     new->data =date
+    new->link = NULL
+
+2. check for list is Empty
+     if(head == NULL){
+     head =new
+     ret success
+    }
+     
+3 check is the list is not empty
+    else{
+    traverse upto last node
+    struct *temp = head
+    
+    while(temp->link != NULL){
+    temp= temp->link    //update the ptr
+    } 
+    update the new value
+    temp->link = new
+     return success
+
+    }
+
+   
+
+*/
