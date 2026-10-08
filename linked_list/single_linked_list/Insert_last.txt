@@ -1,4 +1,3 @@
-/*
 use static it show the updated last value
 when try to insert the multiple values time that time only show the last value
 
@@ -44,8 +43,4 @@ update
     temp->link = new
      return success
 
-    }
-
-   
-
-*/
+    } 
