@@ -64,7 +64,28 @@ int delet_first(list**head){
   *head= (*head)->link;
   return success;
 }
+int insert_nth(list **head,int data,int n){
+  if(*head == NULL && n != 1){
+    return -1;
+  }
+  if(n ==1){
+    return insert_data_first(head,data);
+  }
+  list *temp = *head;
+  int count =1;
+  while(temp != NULL){
+    if(count == n){
+      
+      //write before  count == n
+      //witer after count n-1
 
+
+    }
+    count++;
+    temp = temp->link;
+
+  }
+}
 void print_list(list *head){
   if(head == NULL){
     printf("List is empty\n");
